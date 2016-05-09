@@ -4,7 +4,7 @@ var test1 = es('node index.js David', {encoding: 'UTF-8'});
 var test2 = es('node index.js', {encoding: 'UTF-8'});
 
 
-describe('Testing command line app', () => {
+describe('Testing command line feature, should greet the names supplied as arguments.', () => {
   it('\'node index.js David\' displays \'Hello David!\'', () => {
     assert.equal(test1, 'Hello David!\n');
   });
