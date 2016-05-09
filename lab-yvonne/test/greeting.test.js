@@ -1,9 +1,6 @@
 var assert = require( 'assert' );
+var greet = require('../greeting.js');
 
-function greet (name) {
-  console.log('Hello ' + name);
-  return 'Hello ' + name;
-}
 
 describe ( 'greet somebody', () => {
 
