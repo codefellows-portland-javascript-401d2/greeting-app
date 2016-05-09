@@ -3,10 +3,10 @@ var greet = require( '../greet');
 
 describe('greeting', function(){
   it('returns greeting with name parameter', function(){
-    assert.equal(greet('allison'), 'hello allison');
+    assert.equal(greet.hello('allison'), 'hello allison');
   });
 
   it('returns a string', function(){
-    assert.equal(typeof greet('allison'), 'string');
+    assert.equal(typeof greet.hello('allison'), 'string');
   });
 });
