@@ -1,5 +1,5 @@
 var greet = require('./greet.js');
 
-var args = process.argv.slice(2);
+var subject = process.argv.slice(2).join(' ');
 
-console.log(greet(args[0]));
+console.log(greet(subject));
