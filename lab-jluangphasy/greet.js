@@ -3,3 +3,5 @@ function greet(name = 'there') {
 }
 
 module.exports = greet;
+
+console.log(greet(process.argv[2]));
