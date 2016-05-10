@@ -1,4 +1,5 @@
-function helloYou(name = 'Mysterious Stranger'){
+function helloYou(name){
+  if (name.length < 1) name = 'Mysterious Stranger';
   return('Hello ' + name);
 }
 
