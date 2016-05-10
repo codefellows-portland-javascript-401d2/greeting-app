@@ -1,5 +1,10 @@
 ## changelog for greeting-app.
 
+### 1.0.3 (2016-05-06)
+
+#### bugfixes:
+  - fixed error when -f or -m was used without a name.
+
 ### 1.0.2 (2016-05-06)
 
 #### changes:

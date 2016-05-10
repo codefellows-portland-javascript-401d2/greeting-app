@@ -5,7 +5,7 @@ var program = require('commander');
 
 
 program
-  .version('1.0.2')
+  .version('1.0.3')
   .option('-t, --time', 'Specifies a temporally appropriate greeting.')
   .option('-m, --male', 'Adds a male gender appropriate greeting.')
   .option('-f, --female', 'Adds a female gender appropriate greeting.')
@@ -18,10 +18,10 @@ if (program.male && program.female) {
 
 var subject = program.args[0];
 
-if (program.male && subject.length) {
+if (program.male && subject) {
   subject = 'Mr. ' + subject;
 }
-if (program.female && subject.length) {
+if (program.female && subject) {
   subject = 'Ms. ' + subject;
 }
 
