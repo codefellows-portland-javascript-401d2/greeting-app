@@ -1,18 +1,20 @@
-var generateGreeting = function() {
+// var moment = require('moment');
+
+var generateGreeting = function(hour) {
   var greeting;
-  var thisHour = new Date().getHours();
-  if (thisHour >= 0 && this < 12) {
+  var thisHour = hour;
+  if (thisHour < 12) {
     greeting = 'Good Morning';
-  } else if (thisHour >= 12 && thisHour < 18) {
-    greeting = 'Good Afternoon';
-  } else {
+  } else if (thisHour > 18) {
     greeting = 'Good Evening';
+  } else {
+    greeting = 'Good Afternoon';
   }
   return greeting;
 };
 
-var sayHello = function(name = 'Stranger') {
-  return generateGreeting() + ' ' + name;  
+var sayHello = function(hour, name = 'Stranger') {
+  return generateGreeting(hour) + ' ' + name;  
 };
 
 module.exports.sayHello = sayHello;

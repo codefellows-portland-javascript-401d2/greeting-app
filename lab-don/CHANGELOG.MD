@@ -5,7 +5,7 @@
 
 ## 1.1.0 - 2016-05-10
 ### Added
--
+- Greeting is now dependent on time of day (i.e. Good Morning, Good Afternoon)
 
 ## 1.0.1 - 2016-05-10
 ### Added
