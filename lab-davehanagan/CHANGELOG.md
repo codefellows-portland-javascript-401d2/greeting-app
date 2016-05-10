@@ -6,3 +6,7 @@ All notable updates and changes will be documented here.
 Application greets you with you name
 Started CHANGELOG
 Added NPM, package.json, node_modules
+
+##1.0.1
+###Added
+Added developer tools: eslint, mocha and gulp

@@ -1,6 +1,6 @@
 {
   "name": "lab-davehanagan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Class 2 lab assignment",
   "main": "greet.js",
   "directories": {
@@ -10,5 +10,15 @@
     "test": "mocha"
   },
   "author": "Dave Hanagan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
 }
