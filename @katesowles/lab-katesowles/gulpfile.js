@@ -10,7 +10,7 @@ gulp.task("lint", () => {                                   // sets "lint" task
 });
 
 gulp.task("run-tests", () => {                              // sets "run-tests" task
-    return gulp.src("./tests/**/*.js", {read:false})        // will run task on any JS file in the tests directory; NOTE: not sure what read:false does
+    return gulp.src("./test/**/*.js", {read:false})        // will run task on any JS file in the tests directory; NOTE: not sure what read:false does
     .pipe(mocha({reporter:"dot"}));                         // runs mocha on the aforementioned files; uses "dot" reporter for formatting (minimal output).
 });
 

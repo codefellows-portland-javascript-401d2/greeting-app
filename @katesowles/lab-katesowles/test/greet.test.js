@@ -8,7 +8,7 @@ describe ("greetings", () => {
     });
     it("no name = no one", function() {
         const greeting = greet();
-        assert( /hello no one, how is your (Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day going?/.test(greeting), `result was "${greeting}"`);
+        assert.ok( /hello no one, how is your (Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day going?/.test(greeting), `result was "${greeting}"`);
     });
 
 });
