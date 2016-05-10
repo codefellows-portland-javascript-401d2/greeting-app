@@ -1,8 +1,11 @@
 # Changelog
 
-##[unreleased]
+##[1.2.0] - 2016-05-10
 ### Added
+-Add caturday argument feature
+
 ### Changed
+
 ### Removed
 
 ## [1.1.0] - 2016-05-10

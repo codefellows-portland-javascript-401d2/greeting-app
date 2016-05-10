@@ -1,7 +1,5 @@
-var hello = function (name){
+var hello = function (name = 'young Jedi'){
   return ( 'hello ' + name );
 };
 
 exports.hello = hello;
-
-console.log(hello(process.argv[2]));
