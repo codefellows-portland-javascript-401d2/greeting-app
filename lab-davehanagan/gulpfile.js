@@ -8,8 +8,8 @@ gulp.task('performTest', () =>{
   .pipe(mocha({reporter:'spec'}));
 });
 
-// Eslint task
-gulp.task('lintr', () =>{
+// Stand alone Eslint task
+gulp.task('lint', () =>{
   return gulp.src(['**/*.js', '!node_modules/**'])
   .pipe(eslint())
   .pipe(eslint.format());
@@ -23,7 +23,7 @@ gulp.task('linterWithoutPackage', () =>{
 });
 
 // Watch change to .all my files except package.json
-gulp.task('watchJS', () =>{
+gulp.task('watch', () =>{
   gulp.watch(['**/*js', '!node_modules/**'], ['performTest']);
-  gulp.watch(['**/*'], ['linterWithoutPackage']);
+  gulp.watch(['**/*', '!package.json', '!node_modules/**'], ['linterWithoutPackage']);
 });

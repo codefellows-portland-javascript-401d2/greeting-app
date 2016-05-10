@@ -1,6 +1,6 @@
 {
   "name": "lab-davehanagan",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Class 2 lab assignment",
   "main": "greet.js",
   "directories": {
@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "gulp performTest",
-    "lintr": "gulp lintr",
-    "watch": "gulp watchJS"
+    "lint": "gulp lint",
+    "watch": "gulp watch"
   },
   "author": "Dave Hanagan",
   "license": "ISC",

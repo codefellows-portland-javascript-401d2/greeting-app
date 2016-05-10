@@ -20,3 +20,7 @@ Added a feature to include a cool random face when -f option is included with gr
 Added gulp and npm script features - runs tests and eslint  
 ###Fixed
 Fixed bug on greet.js that allowed an extraneous option
+
+##1.2.1
+###Fixed
+Cleaned up code in gulpfile.js
