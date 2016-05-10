@@ -1,5 +1,4 @@
 var hello = require('./hello');
-var printFace = require('./face');
 var input = process.argv;
 var name;
 if (input[2] !== undefined) {
