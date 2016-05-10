@@ -1,5 +1,11 @@
 ## changelog for greeting-app.
 
+### 1.0.2 (2016-05-06)
+
+#### changes:
+  - added gender appropriate greeting
+  - added an error trap for using both gender flags.
+
 ### 1.0.1 (2016-05-06)
 
 #### changes:
