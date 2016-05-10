@@ -16,10 +16,11 @@
 This work is to be done as a continuation of your fork of the `greeting-app` assignment.
 
 For this assignment you will add the following:
+  * dependency tracking via npm and package.json. Start at version `1.0.0` and commit so you have a baseline for CHANGELOG.md
   * Enhance your greeting features. 
     * Use at least one third-party npm library, example: add icon/art/emoji greeting
     * Add at least one new option to the greet function
-  * dependency tracking via npm and package.json
+
   * automated build and development environent via gulp
   * changelog and semver "history":
     * the version from the previous lab is `v1.0.0`
