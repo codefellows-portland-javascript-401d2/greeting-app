@@ -8,9 +8,6 @@ gulp.task('performTest', () =>{
   .pipe(mocha({reporter:'spec'}));
 });
 
-// All test functions for NPM script
-// gulp.task('test');
-
 // Eslint task
 gulp.task('lintr', () =>{
   return gulp.src(['**/*.js', '!node_modules/**'])
@@ -18,10 +15,15 @@ gulp.task('lintr', () =>{
   .pipe(eslint.format());
 });
 
-// Watch change to .js files
-gulp.task('watchJS', () =>{
-  gulp.watch(['**/*js', '!node_modules/**'], ['performTest']);
+// Eslint but without package.json
+gulp.task('linterWithoutPackage', () =>{
+  return gulp.src(['**/*', '!package.json', '!node_modules/**'])
+  .pipe(eslint())
+  .pipe(eslint.format());
 });
 
-// Default task
-// gulp.task('default', ['watchJS']);
+// Watch change to .all my files except package.json
+gulp.task('watchJS', () =>{
+  gulp.watch(['**/*js', '!node_modules/**'], ['performTest']);
+  gulp.watch(['**/*'], ['linterWithoutPackage']);
+});
