@@ -1,6 +1,6 @@
-function greet(name = 'there') {
-  return 'Hello, ' + name + '!';
-}
+var greet = (name = 'Stranger') => {
+  return `Yo, ${name}!`;
+};
 
 module.exports = greet;
 

@@ -1,12 +1,36 @@
-var assert = require('assert');
-var greet = require('../greet');
+const assert = require('assert');
+const greet = require('../greet');
+const execSync = require('child_process').execSync;
 
-describe('Greeting', function () {
-  it('should return "Hello, there!"', function () {
-    assert.equal(greet(), 'Hello, there!');
+describe('Greeting', () => {
+  describe('greet()', () => {
+    it('Should return "Yo, Stranger!"', () => {
+      assert.equal(greet(), 'Yo, Stranger!');
+    });
+
+    it('Should return "Yo, Johnny!"', () => {
+      assert.equal(greet('Johnny'), 'Yo, Johnny!');
+    });
+
+    it('Should not return "Yo, Friend!"', () => {
+      assert.notEqual(greet('Friend'), 'Yo, Johnny!');
+    });
   });
 
-  it('should return "Hello, Johnny!"', function () {
-    assert.equal(greet('Johnny'), 'Hello, Johnny!');
+  describe('execSync()', () => {
+    it('Should return "Yo, Stranger!"', () => {
+      var greeting = execSync('node greet.js', { encoding: 'utf-8' });
+      assert.equal(greeting.trim(), 'Yo, Stranger!');
+    });
+
+    it('Should return "Yo, Johnny!"', () => {
+      var greeting = execSync('node greet.js Johnny', { encoding: 'utf-8' });
+      assert.equal(greeting.trim(), 'Yo, Johnny!');
+    });
+
+    it('Should not return "Yo, Friend!"', () => {
+      var greeting = execSync('node greet.js Friend', { encoding: 'utf-8' });
+      assert.notEqual(greeting.trim(), 'Yo, Johnny!');
+    });
   });
 });
