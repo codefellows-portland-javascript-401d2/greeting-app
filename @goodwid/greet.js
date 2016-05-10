@@ -1,3 +1,4 @@
+// accepts a string and a boolean value
 function greet (name='friend', temporal) {
   var greeting = '';
 
