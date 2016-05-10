@@ -4,12 +4,12 @@ var greet = require('../greet.js');
 
 describe ( 'greet somebody', () => {
 
-  it ('says hello to Bob, as specified', () => {
-    assert.equal(greet('Bob'), 'Hello, Bob');
+  it ('greets Bob according to time of day', () => {
+    assert.equal(greet('Bob'), 'Good Afternoon, Bob');
   });
 
-  it ('says hello to stranger, since no one specified', () => {
-    assert.equal(greet(), 'Hello, stranger');
+  it ('says Good Afternoon to stranger, since no one specified', () => {
+    assert.equal(greet(), 'Good Afternoon, stranger');
   });
 
 });
