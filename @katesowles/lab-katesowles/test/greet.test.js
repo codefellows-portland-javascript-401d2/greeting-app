@@ -8,7 +8,4 @@ describe ('greetings', () => {
   it('no name = no one', function() {
     assert.equal(greet(), 'hello no one, how is your day going?');
   });
-  it('arguments being inserted correctly?', function() {
-    assert.equal(greet(), 'hello ' + process.argv[2] + ', how is your day going?');
-  });
 });
