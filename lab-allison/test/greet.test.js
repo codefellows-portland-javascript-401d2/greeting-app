@@ -1,5 +1,5 @@
-var assert = require( 'assert' );
-var greet = require( '../greet');
+var assert = require('assert');
+var greet = require('../greet');
 var execSync = require('child_process').execSync;
 
 describe('greeting', function(){
@@ -12,7 +12,7 @@ describe('greeting', function(){
   });
 
   it('arguments are used correctly', function(){
-    var out = execSync('node ../greet.js Ginsburg');
+    var out = execSync('node greet.js Ginsburg', { encoding: 'utf-8'});
     assert.equal(out, 'hello Ginsburg\n');
   });
 });
