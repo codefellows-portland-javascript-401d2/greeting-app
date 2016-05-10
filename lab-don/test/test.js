@@ -8,8 +8,8 @@ describe('greeting', () => {
     assert.equal(hello.sayHello('Don'), 'Hello, Don'); 
   });
     
-  it('treats no input as empty string', () => {
-    assert.equal(hello.sayHello(), 'Hello, '); 
+  it('treats no input as Stranger', () => {
+    assert.equal(hello.sayHello(), 'Hello, Stranger'); 
   });
   
   it('greets input numbers', () => {

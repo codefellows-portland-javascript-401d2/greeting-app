@@ -1,4 +1,4 @@
-var sayHello = function(name = '') {
+var sayHello = function(name = 'Stranger') {
   return 'Hello, ' + name;  
 };
 
