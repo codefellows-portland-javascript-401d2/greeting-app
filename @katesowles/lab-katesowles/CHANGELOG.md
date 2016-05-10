@@ -2,7 +2,14 @@
 
 ## [Unreleased]
 #### Added
+[nothing yet]
+
+---
+
+## [1.2.0] - 2016-05-10
+#### Added
 - updated the greeting to mention the current day of the week @katesowles.
+- dev tests updated to pass/fail correctly @katesowles.
 
 ---
 
