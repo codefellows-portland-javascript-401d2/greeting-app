@@ -5,6 +5,7 @@
 ### Added
 
 - Started a change log.
+- Created a readme.
 
 ### Changed
 
