@@ -1,3 +1,7 @@
+#1.0.2 (2016-5-10)
+##ADDED
+Now includes moments npm package. Functionality has remained the same! 
+
 #1.0.1 (2016-5-10)
 ##ADDED
 Now has extra functionality. Will now greet person according to time of day!
