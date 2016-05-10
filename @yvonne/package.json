@@ -1,6 +1,6 @@
 {
   "name": "GreetingAppLab2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CF401-JS Lab2",
   "main": "index.js",
   "directories": {
