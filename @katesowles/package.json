@@ -1,0 +1,27 @@
+{
+  "name": "katesowles",
+  "version": "1.1.0",
+  "description": "lab2-katesowles",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "test": "gulp test",
+    "lint": "gulp lint"
+  },
+  "author": "kate sowles",
+  "license": "ISC",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katesowles/greeting-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/katesowles/greeting-app/issues"
+  },
+  "homepage": "https://github.com/katesowles/greeting-app#readme"
+}
