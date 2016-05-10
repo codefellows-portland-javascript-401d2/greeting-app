@@ -9,8 +9,6 @@ for (var i in argsKeep){
   if (argsKeep[i] === '-f'){
     // -f = Face Option, added a random cool ascii face
     console.log(`${cool()}`);
-  }else if(argsKeep[i] === '-b'){
-    // -b  = B Option
   }else{
     // Capture args that are not options
     params.push(argsKeep[i]);
