@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 #### Added
+- updated the greeting to mention the current day of the week @katesowles.
 
 ---
 
