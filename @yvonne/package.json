@@ -10,5 +10,8 @@
     "test": "test"
   },
   "author": "yvonne",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.13.0"
+  }
 }

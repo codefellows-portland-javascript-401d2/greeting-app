@@ -1,10 +1,14 @@
-module.exports = function greet (name = 'stranger') {
-  var now = new Date();
-  if (now.getHours() < 12) {
+var moment = require('moment');
+
+var greet = function (name = 'stranger') {
+  var now = moment().hour();
+  if (now < 12) {
     return 'Good Morning, ' + name;
-  } else if ((now.getHours() <= 13) && (now.getHours() < 18)) {
+  } else if ((now >= 13) && (now < 18)) {
     return 'Good Afternoon, ' + name;
   } else {
     return 'Good Evening, ' + name;
   }
 };
+
+module.exports.greet = greet;

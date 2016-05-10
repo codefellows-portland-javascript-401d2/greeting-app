@@ -1,2 +1,4 @@
 var greet = require ('./greet');
-console.log(greet(process.argv[2]));
+
+greet.greet();
+// console.log(greet(process.argv[2]));
