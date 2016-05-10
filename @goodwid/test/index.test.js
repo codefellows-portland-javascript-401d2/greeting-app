@@ -18,7 +18,17 @@ describe('Testing command line feature, should greet the names supplied as argum
 
 describe('Testing command line parameters.', () => {
   var test3 = es('./index.js -t David', {encoding: 'UTF-8'});
-  it('\'index.js -t David\' displays \'Good Evening David!\'', () => {
+  var test4 = es('./index.js -tm David', {encoding: 'UTF-8'});
+  var test5 = es('./index.js -f Anne')
+  it('\'index.js -t David\' displays \'Good Morning|Afternoon|Evening David!\'', () => {
     assert(/Good (Morning|Afternoon|Evening) David!\n/.test(test3));
   });
+  it('\'index.js -tm David\' displays \'Good Morning|Afternoon|Evening Mr. David!\'', () => {
+    assert(/Good (Morning|Afternoon|Evening) Mr. David!\n/.test(test4));
+  });
+  it('\'index.js -f Anne\' displays \'Hello Ms. Anne!\'', () => {
+    assert(/Hello Ms. Anne!\n/.test(test5));
+  });
+
+
 });
