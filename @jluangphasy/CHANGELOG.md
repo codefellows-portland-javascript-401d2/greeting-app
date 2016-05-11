@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.2.1] - 2016-05-10
+
+## Added
+
+- Created .eslintignore, .eslintrc, .gitignore, and gulpfile.js files.
+- Created gulp tasks for lint, tests, and watching js files.
+
 ## [1.2.0] - 2016-05-10
 
 ## Added
