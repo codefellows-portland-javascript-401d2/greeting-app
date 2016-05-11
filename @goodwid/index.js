@@ -12,11 +12,5 @@ program
   .parse(process.argv);
 
 var subject = program.args[0];
-var options = {
-  time: program.time,
-  male: program.male,
-  female: program.female 
-};
 
-
-console.log(greet(subject, options));
+console.log(greet(subject, program));
