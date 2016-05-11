@@ -1,12 +1,29 @@
 # Change Log
 
+## [1.1.0] - 2016-05-10
+
+### Added
+
+- Using figlet module to output greeting.
+- Created tests for updated `greet()` with figlet.
+- Created index.js to call greet function in console.
+- Init package.json.
+
+### Changed
+
+- Renamed directory "test" to "tests".
+
+### Removed
+
+- Took out `console.log` with greet function in greet.js.
+
 ## [1.0.0] - 2016-05-10
 
 ### Added
 
 - Started a change log.
 - Created a readme.
-- Created tests for `execSync()`
+- Created tests for `execSync()`.
 
 ### Changed
 

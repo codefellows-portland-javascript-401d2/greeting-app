@@ -1,7 +1,7 @@
-var greet = (name = 'Stranger') => {
-  return `Yo, ${name}!`;
+const textSync = require('figlet').textSync;
+
+const greet = (name = 'Stranger') => {
+  return textSync(`Yo, ${name}!`);
 };
 
 module.exports = greet;
-
-console.log(greet(process.argv[2]));
