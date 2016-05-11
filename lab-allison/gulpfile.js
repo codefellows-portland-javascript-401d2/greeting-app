@@ -20,5 +20,3 @@ gulp.task('watch-js', function(){
 });
 
 gulp.task('default', ['lint', 'run-test']);
-
-//TODO set up npm scripts and default task

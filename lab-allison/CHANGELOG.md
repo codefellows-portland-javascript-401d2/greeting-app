@@ -1,5 +1,9 @@
 # Changelog
 
+##[1.3.1] - 2016-05-10
+### Changed
+-Consolidated tests, watch, linting to gulp tasks and npm scripts
+
 ##[1.3.0] - 2016-05-10
 ### Added
 -Add weekday feature - command line utility now displays current weekday on greeting

@@ -9,7 +9,8 @@
   "scripts": {
     "test": "gulp",
     "dev": "mocha test -w",
-    "lint": "gulp-eslint"
+    "lint": "gulp lint",
+    "watch": "gulp watch-js"
   },
   "author": "allison davis",
   "license": "ISC",
