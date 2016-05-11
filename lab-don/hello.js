@@ -1,5 +1,3 @@
-// var moment = require('moment');
-
 var generateGreeting = function(hour) {
   var greeting;
   var thisHour = hour;

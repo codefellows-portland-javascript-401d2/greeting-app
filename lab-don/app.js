@@ -1,15 +1,12 @@
 var moment = require('moment');
 var hello = require('./hello');
-var input = process.argv;
+var input = process.argv.slice(2);
+var currentHour = moment().hour();
 var name;
 
-if (input[2] !== undefined) {
-  name = '';
-} 
-// Handles input multiple names separated by space
-for (var i = 2; i < input.length; i++) {
-  name += input[i] + ' ';
+if (input.length) {
+  console.log('input is not empty');
+  name = input.join(' ');
 }
-
 // Main executive
-console.log(hello.sayHello(moment().hour(), name));
+console.log(hello.sayHello(currentHour, name));

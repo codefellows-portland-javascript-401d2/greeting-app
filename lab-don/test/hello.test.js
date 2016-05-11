@@ -13,15 +13,17 @@ describe('greeting', () => {
   it('accepts argument via command line, uses as name input', () => {
     var testStr = execSync('node app.js Dingle').toString();
     var pattern = /Morning|Afternoon|Evening/;
-    var whichTime = pattern.exec(testStr);
-    assert.equal(testStr, 'Good ' + whichTime + ' Dingle \n');
+    var whichGreeting = pattern.exec(testStr);
+    var actualStr = 'Good ' + whichGreeting + ' Dingle \n';
+    assert.equal(testStr, actualStr);
   });
   
   it('handles multiple names in CLI arguments', () => {
-    var testStr = execSync('node app.js Dingle McFuss').toString();
+    var testStr = execSync('node app.js Dingle McFuss Jr.').toString();
     var pattern = /Morning|Afternoon|Evening/;
-    var whichTime = pattern.exec(testStr);
-    assert.equal(testStr, 'Good ' + whichTime + ' Dingle McFuss \n');
+    var whichGreeting = pattern.exec(testStr);
+    var actualStr = 'Good ' + whichGreeting + ' Dingle McFuss Jr. \n';
+    assert.equal(testStr, actualStr);
   });
         
 });

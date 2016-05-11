@@ -2,10 +2,11 @@
 
 ## Unreleased
 
-
 ## 1.1.0 - 2016-05-10
 ### Added
 - Greeting is now dependent on time of day (i.e. Good Morning, Good Afternoon)
+- Tests for custom greeting
+- Moment.js added as dependency, used for getting current hour and inputting hour for test
 
 ## 1.0.1 - 2016-05-10
 ### Added
