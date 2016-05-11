@@ -11,25 +11,12 @@ program
   .option('-f, --female', 'Adds a female gender appropriate greeting.')
   .parse(process.argv);
 
-if (program.male && program.female) {
-  console.log('\n  error: Please specify only one gender.\n');
-  process.exit(1);
-}
-
 var subject = program.args[0];
+var options = {
+  time: program.time,
+  male: program.male,
+  female: program.female 
+};
 
-// Check for gender flags and if a name is entered.
-if (program.male && subject) {
-  subject = 'Mr. ' + subject;
-}
-if (program.female && subject) {
-  subject = 'Ms. ' + subject;
-}
 
-// check for temporal flag
-if (program.time) {
-  console.log(greet(subject, true));
-} else {
-  // default behavior.
-  console.log(greet(subject));
-}
+console.log(greet(subject, options));
