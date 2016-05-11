@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.2.0] - 2016-05-10
+
+## Added
+
+- Added option to set figlet font for greet(). For a list of available fonts: http://www.figlet.org/fontdb.cgi.
+
 ## [1.1.0] - 2016-05-10
 
 ### Added
