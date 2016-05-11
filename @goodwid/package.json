@@ -1,6 +1,6 @@
 {
   "name": "lab-goodwid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "greeter",
   "main": "index.js",
   "directories": {
