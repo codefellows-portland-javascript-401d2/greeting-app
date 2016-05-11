@@ -18,7 +18,7 @@ describe('Testing command line parameters.', () => {
   var test3 = es('./index.js -t David', {encoding: 'UTF-8'});
   var test4 = es('./index.js -tm David', {encoding: 'UTF-8'});
   var test5 = es('./index.js -f Anne', {encoding: 'UTF-8'});
-  
+
   it('\'./index.js -t David\' displays \'Good Morning|Afternoon|Evening David!\'', () => {
     assert(/Good (Morning|Afternoon|Evening) David!\n/.test(test3));
   });

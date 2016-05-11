@@ -26,10 +26,4 @@ if (program.female && subject) {
   subject = 'Ms. ' + subject;
 }
 
-// check for temporal flag
-if (program.time) {
-  console.log(greet(subject, true));
-} else {
-  // default behavior.
-  console.log(greet(subject));
-}
+console.log(greet(subject, program.time));
