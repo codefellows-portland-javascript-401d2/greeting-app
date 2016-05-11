@@ -4,13 +4,13 @@
 ### Added
 -Add weekday feature - command line utility now displays current weekday on greeting
 
-### Changed
--Update testing
 
 ##[1.2.0] - 2016-05-10
 ### Added
 -Add ASCII cats to greet.js via cat-me npm package
 
+### Changed
+-Amended cli test to account for ASCII cat output by changing test conditions
 
 ## [1.1.0] - 2016-05-10
 ### Added
