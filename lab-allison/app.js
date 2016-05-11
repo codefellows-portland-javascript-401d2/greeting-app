@@ -1,6 +1,6 @@
 var greet = require('./greet');
-//var cat = require('./caturday');
+var catMe =  require('cat-me');
+var getWeekDay = require('./date');
 
 console.log(greet.hello(process.argv[2]));
-
-//console.log(cat.caturday(process.argv[3]));
+console.log(`Happy ${getWeekDay.date()}!\n ${catMe()}`);

@@ -1,8 +1,13 @@
 # Changelog
 
+##[1.3.0] - 2016-05-10
+### Added
+### Changed
+### Removed
+
 ##[1.2.0] - 2016-05-10
 ### Added
--Add caturday argument feature
+-Add ASCII cats to greet.js via cat-me npm package
 
 ### Changed
 
