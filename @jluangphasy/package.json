@@ -1,0 +1,27 @@
+{
+  "name": "greeting-app",
+  "version": "1.2.1",
+  "description": "A simple greeting app.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "lint": "gulp run-lint",
+    "test": "gulp run-tests",
+    "watch": "gulp watch-js"
+  },
+  "author": "Johnny Luangphasy (https://github.com/jluangphasy)",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
+}
