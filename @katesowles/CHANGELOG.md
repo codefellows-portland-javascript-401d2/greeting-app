@@ -2,7 +2,12 @@
 
 ## [Unreleased]
 #### Added
-[nothing yet]
+- readme file
+- added missing dependencies
+
+#### Change
+- switched from cool-ascii-faces to random-emoji @katesowles.
+- removed intermediate folder to simplify file structure for automation @katesowles.
 
 ---
 
