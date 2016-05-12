@@ -9,4 +9,8 @@ describe('Testing the greet function, should greet the name supplied.', () => {
   it('greet() returns \'Hello friend!\'', () => {
     assert.equal(greet(), 'Hello friend!');
   });
+
+  it ('greet(\'David\',{male: true}) returns \'Hello Mr. David!\'', () => {
+    assert.equal(greet('David', {male: true}), 'Hello Mr. David!');
+  });
 });
